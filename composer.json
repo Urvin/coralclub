@@ -1,0 +1,31 @@
+{
+    "name": "urvin/coralclub",
+    "description": "Coral Club test task",
+    "type": "library",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Yuriy Gorbachev",
+            "email": "yuriy@gorbachev.rocks"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "urvin\\coralclub\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "urvin\\coralclub\\tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "php vendor/bin/phpunit --configuration ./phpunit.dist.xml --coverage-html=coverage"
+    }
+}
